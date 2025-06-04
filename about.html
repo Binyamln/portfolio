@@ -3,38 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Portfolio</title>
+  <title>About - Binyamin Abukar</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTTXRNGlp6bAHLV8B0hEXZ9f/wmP6t0fJK4t6G2yRrhZ9uM9ycLlmfFSJKm+CVvPUG3k82lG4g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
     <nav>
-      <ul>
+      <a href="/" class="logo"><i class="fas fa-code"></i> Binyamin</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <ul class="navbar">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="social">
+        <a href="https://github.com/Binyamln" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/binyamin-abukar-1974a3229/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/your-instagram/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
     </nav>
   </header>
   
   <main>
-    <section class="about">
-      <img src="profile.jpg" alt="Profile Photo" class="profile-photo" />
-      <div class="about-text">
-        <h1>About Me</h1>
-        <p>
-          I'm a passionate computer science student at the University of Louisville pursuing both a B.A. and an upcoming M.S. in Computer Science. My expertise spans software engineering, data structures, machine learning, and algorithms.
-        </p>
-        <p>
-          I have interned at PPL Electric Utilities and Siemens, working on SQL solutions, front-end development, and software testing. Additionally, I serve as a Diversity Student Ambassador, guiding prospective students through campus life.
-        </p>
-        <p>
-          I enjoy exploring innovative projects and cutting-edge technologies in the tech space.
-        </p>
+    <section class="about-section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-card">
+          <h3><i class="fas fa-heart"></i> My Passions</h3>
+          <p>
+            I’m driven by the potential of technology to solve real problems and improve lives. My work in computer science is focused on building efficient, scalable systems that deliver impact. Key areas of interest include:          </p>
+          <ul class="passion-list">
+            <li><i class="fas fa-robot"></i> Artificial Intelligence and Machine Learning</li>
+            <li><i class="fas fa-mobile-alt"></i> Scalable Web and API Development</li>
+            <li><i class="fas fa-cloud"></i> Cloud Computing and AWS</li>
+            <li><i class="fas fa-code"></i> Software Engineering and System Design</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h3><i class="fas fa-lightbulb"></i> What Drives Me</h3>
+          <p>
+            I believe in continuous learning and pushing the boundaries of what's possible with technology. My goal is to develop solutions that are not only technically sound but also user-friendly and accessible to everyone.
+          </p>
+          <p>
+            As a student at the University of Louisville, I'm actively involved in various tech communities and projects that allow me to apply my skills while learning from others. I'm particularly interested in bridging the gap between technology and real-world applications.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3><i class="fas fa-star"></i> Future Goals</h3>
+          <p>
+            Looking ahead, I aim to:
+          </p>
+          <ul class="goals-list">
+            <li>Contribute to open-source projects</li>
+            <li>Develop innovative mobile applications</li>
+            <li>Master cloud architecture and deployment</li>
+            <li>Create impactful AI solutions</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
+
+  <a href="#" class="scroll-top" id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
 </html>

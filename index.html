@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Binyamin Abukar - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
     integrity="sha512-Fo3rlrZj/k7ujTTXRNGlp6bAHLV8B0hEXZ9f/wmP6t0fJK4t6G2yRrhZ9uM9ycLlmfFSJKm+CVvPUG3k82lG4g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,12 +13,14 @@
 <body>
   <header>
     <nav>
-      <!-- <div class="logo">Portfolio</div> -->
-      <ul>
-        <li><a href="index.html">Home</a></li>
+      <a href="index.html" class="logo"><i class="fas fa-code"></i> Binyamin</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <ul class="navbar">
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="social">
         <a href="https://github.com/Binyamln" target="_blank"><i class="fab fa-github"></i></a>
@@ -29,62 +31,160 @@
   </header>
   
   <main>
-    <section class="hero">
-      <h1>Welcome to My Portfolio</h1>
-      <p>M.S. &amp; B.A. in Computer Science | University of Louisville</p>
-      <p>Louisville, Kentucky</p>
-    </section>
-    
-    <section id="resume">
-      <h2>Resume</h2>
-      <div class="resume-section">
-        <h3>Education</h3>
-        <p>
-          University of Louisville<br />
-          M.S. Computer Science Major, May 2026<br />
-          B.A. Computer Science Major, May 2025<br />
-          GPA: 3.6/4.00
-        </p>
-        <p>
-          Relevant Coursework: Software Engineering, Data Structures, Machine Learning, Algorithms<br />
-          Organizations and Awards: Dean's List, National Society Of Black Engineers, Porter Scholar, Student Government
-        </p>
-      </div>
-      <div class="resume-section">
-        <h3>Experience</h3>
-        <h4>PPL Electric Utilities | IT Intern</h4>
-        <p>
-          May 2024 - Present | Louisville, Kentucky<br />
-          - Designed and implemented SQL solutions for real-time solar panel production tracking.<br />
-          - Developed front-end interfaces using HTML and CSS.<br />
-          - Maintained technical documentation for future upgrades.
-        </p>
-        <h4>Siemens | Software Development Intern</h4>
-        <p>
-          May 2023 - July 2023 | Louisville, Kentucky<br />
-          - Created warning scripts using Bash and Python.<br />
-          - Tested new software for performance and reliability.
-        </p>
-        <h4>University Of Louisville | Diversity Student Ambassador for Admissions</h4>
-        <p>
-          December 2022 - Present | Louisville, Kentucky<br />
-          - Facilitated campus tours and shadow visits.
-        </p>
-      </div>
-      <div class="resume-section">
-        <h3>Skills</h3>
-        <p>
-          Languages: Python, Java, C, C++, JavaScript, HTML, CSS, SQL<br />
-          Technologies &amp; Frameworks: React JS, React Bootstrap, AWS Lambda, SAM, DynamoDB
-        </p>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Binyamin Abukar</h1>
+        <img src="1745102095044.png" alt="Binyamin Abukar" class="profile-photo">
+        <p class="subtitle">
+          • M.S. Computer Science 					                                            	            May 2026          <br>
+          • B.A. Computer Science 					                                            	            May 2026          
+        <p>Innovating at the intersection of AI, software systems, and emerging technologies.</p>
       </div>
     </section>
     
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:baabuk01@louisville.edu">baabuk01@louisville.edu</a></p>
-      <p>Phone: 502-291-5111</p>
+    <section id="resume" class="resume-section">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-content">
+        <div class="resume-card">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <p>
+            B.A. Computer Science Major, May 2025<br />
+            GPA: 3.6/4.00 <br />
+            M.S. Computer Science Major, May 2026<br />
+          </p>
+          <p>
+            
+          </p>
+        </div>
+
+        <div class="resume-card">
+          <h3><i class="fas fa-briefcase"></i> Experience</h3>
+          <div class="experience-item">
+            <h4>PPL Electric Utilities | IT Intern</h4>
+            <p>
+              May 2024 - Present | Louisville, KY<br />
+              • Designed and implemented SQL pipelines for real-time tracking of solar panel production across multiple sites.<br />
+              • Developed responsive front-end components using HTML and CSS to improve data visualization for internal users.<br />
+              • Maintained technical documentation for internal systems, streamlining onboarding and future system updates.<br />
+              • Supported the automation of email billing systems, reducing manual workload for IT staff.<br />
+              • Collaborated with energy analysts to integrate dashboards and reports from solar data outputs.
+            </p>
+          </div>
+          <div class="experience-item">
+            <h4>Siemens | Software Development Intern</h4>
+            <p>
+              May 2023 - July 2023 | Louisville, KY<br />
+              • Created real-time warning scripts using Bash and Python, improving dispatcher response to train irregularities.<br />
+              • Parsed geolocation and train log data to trigger early alerts, increasing operational safety.<br />
+              • Performed unit and integration testing on team-developed modules, reporting critical edge cases and bugs.<br />
+              • Participated in Agile sprint planning and code reviews, learning enterprise software lifecycle processes.
+            </p>
+          </div>
+          <div class="experience-item">
+            <h4>University of Louisville | Diversity Student Ambassador, Office of Admissions</h4>
+            <p>
+              December 2022 - Present | Louisville, KY<br />
+              • Led campus tours and coordinated student shadow visits to support university outreach efforts.<br />
+              • Represented the university at events, promoting equity, access, and academic opportunities for underrepresented groups.<br />
+              • Mentored prospective students, answering questions on academics, student life, and admissions process.
+            </p>
+          </div>
+        </div>
+
+        <div class="resume-card">
+          <h3><i class="fas fa-code"></i> Skills</h3>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h4>Languages</h4>
+              <div class="skill-tags">
+                <span>Python</span>
+                <span>Java</span>
+                <span>C</span>
+                <span>C++</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SQL</span>
+                <span>TypeScript</span>
+                <span>Bash</span>
+                <span>ABAP</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Technologies & Frameworks</h4>
+              <div class="skill-tags">
+                <span>React.js</span>
+                <span>React Bootstrap</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>Flask</span>
+                <span>SAP</span>
+                <span>SAP Fiori</span>
+                <span>SAP BTP</span>
+                <span>AWS Lambda</span>
+                <span>AWS SAM</span>
+                <span>DynamoDB</span>
+                <span>MongoDB</span>
+                <span>Firebase</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Docker</span>
+                <span>Jupyter</span>
+                <span>Postman</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Cloud & DevOps</h4>
+              <div class="skill-tags">
+                <span>AWS Lambda</span>
+                <span>AWS S3</span>
+                <span>AWS EC2</span>
+                <span>AWS IAM</span>
+                <span>AWS DynamoDB</span>
+                <span>GitHub Actions</span>
+                <span>CI/CD</span>
+                <span>Linux (Bash)</span>
+                <span>Docker</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Databases</h4>
+              <div class="skill-tags">
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>SQLite</span>
+                <span>DynamoDB</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>AI/ML Tools</h4>
+              <div class="skill-tags">
+                <span>scikit-learn</span>
+                <span>TensorFlow</span>
+                <span>PyTorch</span>
+                <span>HuggingFace Transformers</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>OpenCV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+
+  <a href="#home" class="scroll-top" id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
 </html>
