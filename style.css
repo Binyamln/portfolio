@@ -152,7 +152,7 @@ nav {
   font-size: 1.6rem;
   color: var(--text-color);
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .hero-content p:last-child {
@@ -207,30 +207,82 @@ nav {
   color: var(--text-color);
 }
 
+/* Education Item */
+.education-item {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.education-item h4 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Experience Item */
 .experience-item {
-  margin-bottom: 40px;
-  padding: 20px;
-  background: var(--card-color);
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--background-color);
   border-radius: 10px;
   border: 1px solid var(--border-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .experience-item h4 {
   font-size: 1.8rem;
   color: var(--primary-color);
-  margin-bottom: 15px;
+  margin-bottom: 0.5rem;
 }
 
-.experience-item p {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+.experience-meta {
+  font-size: 1.3rem;
   color: var(--text-color);
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-item li {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.experience-item li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
 }
 
 .skills-container {
@@ -240,7 +292,7 @@ nav {
 }
 
 .skill-category {
-  background: var(--card-color);
+  background: var(--background-color);
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid var(--border-color);
@@ -512,6 +564,76 @@ nav {
   margin-bottom: 50px;
 }
 
+/* Project Card (New Style) */
+.project-card {
+  background: var(--card-color);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-header {
+  margin-bottom: 20px;
+}
+
+.project-header h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-header h2 i {
+  font-size: 28px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: var(--primary-color);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.project-description {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--hover-color);
+}
+
+/* Legacy Project Item (for backward compatibility) */
 .project-item {
   background: var(--card-color);
   padding: 40px;
@@ -548,6 +670,234 @@ nav {
 .project-item a:hover {
   color: var(--hover-color);
   text-decoration: underline;
+}
+
+/* Game Section Styles */
+.game-section {
+  padding: 120px 20px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.game-title {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.game-title i {
+  font-size: 4.5rem;
+}
+
+.game-subtitle {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
+
+.game-container {
+  background: var(--card-color);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+.stat i {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.stat strong {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
+
+#gameCanvas {
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  background: var(--background-color);
+  max-width: 100%;
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.2);
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.game-btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.game-btn:hover:not(:disabled) {
+  background: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+}
+
+.game-btn:disabled {
+  background: #444;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Mobile Controls */
+.mobile-controls {
+  display: none;
+  margin-top: 25px;
+}
+
+.d-pad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.d-pad-middle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.d-btn {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.d-btn:active {
+  background: var(--hover-color);
+  transform: scale(0.95);
+}
+
+/* Game Over Overlay */
+.game-over-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(18, 18, 18, 0.95);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.game-over-content {
+  text-align: center;
+  padding: 40px;
+}
+
+.game-over-content h2 {
+  font-size: 3.5rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.game-over-content p {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+#finalScore {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Game Info Cards */
+.game-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background: var(--card-color);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.info-card h3 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  opacity: 0.8;
 }
 
 /* Media Queries */
@@ -606,8 +956,12 @@ nav {
     padding: 30px;
   }
 
-  .project-item {
-    padding: 30px;
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-header h2 {
+    font-size: 2rem;
   }
 
   .contact-section .section-title {
@@ -621,6 +975,23 @@ nav {
   .contact-card p,
   .contact-card a {
     font-size: 1.4rem;
+  }
+
+  .game-title {
+    font-size: 3rem;
+  }
+
+  .game-stats {
+    gap: 20px;
+  }
+
+  .mobile-controls {
+    display: flex;
+    justify-content: center;
+  }
+
+  .game-info {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -637,5 +1008,15 @@ nav {
     width: 150px;
     height: 150px;
   }
+
+  #gameCanvas {
+    width: 280px;
+    height: 280px;
+  }
+
+  .d-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+  }
 }
-  

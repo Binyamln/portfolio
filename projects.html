@@ -13,13 +13,14 @@
 <body>
   <header>
     <nav>
-      <a href="/" class="logo"><i class="fas fa-code"></i> Binyamin</a>
+      <a href="index.html" class="logo"><i class="fas fa-code"></i> Binyamin</a>
       <div id="menu" class="fas fa-bars"></div>
       <ul class="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="index.html#resume">Resume</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="game.html">Game</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="social">
@@ -34,29 +35,112 @@
     <section class="projects">
       <h1>My Projects</h1>
       
-      <div class="project-item">
-        <h2><i class="fas fa-atom"></i> A.T.O.M.S</h2>
-        <p><i class="fas fa-link"></i> <a href="https://github.com/Binyamln/A.T.O.M.S" target="_blank">View on GitHub</a></p>
+      <div class="project-card">
+        <div class="project-header">
+          <h2><i class="fas fa-video"></i> Aegis-Cam</h2>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">YOLOv8</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Real-Time Crash Detection System - Designed and implemented a computer vision pipeline capable of analyzing live and recorded traffic camera feeds to identify vehicle collisions and hazardous events with high temporal accuracy.
+        </p>
+        <a href="https://github.com/Binyamln" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
       </div>
 
-      <div class="project-item">
-        <h2><i class="fas fa-gamepad"></i> CaveKeep</h2>
-        <p><i class="fas fa-link"></i> <a href="https://play.unity.com/en/games/1146eed1-1775-470d-b0a2-135c3b311290/cavekeep" target="_blank">Play on Unity</a></p>
+      <div class="project-card">
+        <div class="project-header">
+          <h2><i class="fas fa-microchip"></i> OS Scheduler & Performance Analyzer</h2>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">OS Concepts</span>
+            <span class="tag">Visualization</span>
+          </div>
+        </div>
+        <p class="project-description">
+          A desktop tool to simulate how an operating system schedules tasks and manages resources (CPU, memory, I/O). Features FCFS, SJF, Priority, and Round Robin algorithms with Gantt charts and performance metrics visualization.
+        </p>
+        <a href="https://github.com/Binyamln" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h2><i class="fas fa-atom"></i> A.T.O.M.S</h2>
+          <div class="project-tags">
+            <span class="tag">AI</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Python</span>
+            <span class="tag">Tkinter</span>
+          </div>
+        </div>
+        <p class="project-description">
+          AI Powered Talent and Opportunity Matching System - Developed ATOMS, an offline-capable AI recruiting tool that uses NLP to match resumes with job descriptions, earning 3rd place at the EDIS Capstone Showcase.
+        </p>
+        <a href="https://github.com/Binyamln/A.T.O.M.S" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h2><i class="fas fa-gamepad"></i> CaveKeep</h2>
+          <div class="project-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Game Dev</span>
+          </div>
+        </div>
+        <p class="project-description">
+          An immersive dungeon exploration game built with Unity. Navigate through mysterious caves, solve puzzles, and uncover hidden treasures.
+        </p>
+        <a href="https://play.unity.com/en/games/1146eed1-1775-470d-b0a2-135c3b311290/cavekeep" target="_blank" class="project-link"><i class="fas fa-play"></i> Play on Unity</a>
       </div>
       
-      <div class="project-item">
-        <h2><i class="fas fa-vr-cardboard"></i> VR Car Repair Simulator</h2>
-        <p><i class="fas fa-link"></i> <a href="https://github.com/NickPPerez/Vehicle_Vr_Repair" target="_blank">View on GitHub</a></p>
+      <div class="project-card">
+        <div class="project-header">
+          <h2><i class="fas fa-vr-cardboard"></i> VR Car Repair Simulator</h2>
+          <div class="project-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">VR</span>
+            <span class="tag">C#</span>
+          </div>
+        </div>
+        <p class="project-description">
+          A virtual reality experience for automotive repair training. Learn to diagnose and fix car issues in an immersive VR environment.
+        </p>
+        <a href="https://github.com/NickPPerez/Vehicle_Vr_Repair" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
       </div>
       
-      <div class="project-item">
-        <h2><i class="fas fa-brain"></i> Sentiment Analysis Tool</h2>
-        <p><i class="fas fa-link"></i> <a href="https://github.com/Binyamln/sentiment-analysis-tool" target="_blank">View on GitHub</a></p>
+      <div class="project-card">
+        <div class="project-header">
+          <h2><i class="fas fa-brain"></i> Sentiment Analysis Tool</h2>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+        </div>
+        <p class="project-description">
+          A machine learning tool that analyzes text sentiment using natural language processing techniques. Classifies text as positive, negative, or neutral with confidence scores.
+        </p>
+        <a href="https://github.com/Binyamln/sentiment-analysis-tool" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
       </div>
       
-      <div class="project-item">
-        <h2><i class="fas fa-calculator"></i> Tip Calculator App</h2>
-        <p><i class="fas fa-link"></i> <a href="https://github.com/Binyamln/CSE-470-MobileAppDevelopment" target="_blank">View on GitHub</a></p>
+      <div class="project-card">
+        <div class="project-header">
+          <h2><i class="fas fa-calculator"></i> Tip Calculator App</h2>
+          <div class="project-tags">
+            <span class="tag">Mobile</span>
+            <span class="tag">React Native</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <p class="project-description">
+          A clean and intuitive mobile application for calculating tips and splitting bills among friends. Features custom tip percentages and bill splitting functionality.
+        </p>
+        <a href="https://github.com/Binyamln/CSE-470-MobileAppDevelopment" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
       </div>
     </section>
   </main>
